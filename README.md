@@ -14,11 +14,10 @@ The Analytics Master Service powers a data analytics dashboard designed to provi
 
 https://excalidraw.com/#json=XDaDU3WIf3NGatw0L6UYj,2_NfKKC_VxJpcCalijr1Tg
 
-# App setup:
-   
-    pip3 install -r requirements.txt
+When the `Docker` is started, the base URL address:
 
-    uvicorn main:app --reload --port 5000
+* Backend Application (API docs) $\rightarrow$ `http://127.0.0.1:5000/api`
+
 # API Endpoints
 
    Detailed API documentation is available at :- https://drive.google.com/file/d/1reQidBjWVKuxEyBA14QY0kRtcPaMQlmQ/view?usp=drivesdk
