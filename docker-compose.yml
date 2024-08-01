@@ -13,7 +13,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-  fastapi:
+  my-fastapi-app:
     build: .
     container_name: fastapi
     ports:
