@@ -2,15 +2,26 @@ version: '3.8'
 
 services:
   postgres:
-    image: postgres:latest
+    image: postgres:13
+    container_name: postgres
     environment:
-      POSTGRES_DB: mydatabase
       POSTGRES_USER: myuser
       POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydatabase
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+
+  fastapi:
+    build: .
+    container_name: fastapi
+    ports:
+      - "5000:5000"
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://myuser:mypassword@postgres:5432/mydatabase
 
 volumes:
   postgres_data:

@@ -10,7 +10,7 @@ from sqlalchemy.ext.asyncio import (
 class AsyncDatabase:
     def __init__(self):
         self.postgres_uri: PostgresDsn = PostgresDsn(
-            url='postgresql://myuser:mypassword@localhost:5432/mydatabase',
+            url='postgresql://myuser:mypassword@postgres:5432/mydatabase',
         )
         self.async_engine: SQLAlchemyAsyncEngine = create_sqlalchemy_async_engine(
             url=self.set_async_db_uri,
