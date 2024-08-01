@@ -7,3 +7,4 @@ pandas~=2.2.2
 router~=0.1
 pydantic~=2.8.2
 loguru~=0.7.2
+asyncpg
