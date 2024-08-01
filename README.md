@@ -16,7 +16,7 @@ https://excalidraw.com/#json=XDaDU3WIf3NGatw0L6UYj,2_NfKKC_VxJpcCalijr1Tg
 
 When the `Docker` is started, the base URL address:
 
-* Backend Application (API docs) $\rightarrow$ `http://127.0.0.1:5000/api`
+* Backend Application $\rightarrow$ `http://127.0.0.1:5000/api`
 
 # API Endpoints
 
