@@ -4,7 +4,7 @@ from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy import create_engine, inspect
 
 
-DATABASE_URI = 'postgresql+psycopg2://myuser:mypassword@localhost:5432/mydatabase'
+DATABASE_URI = 'postgresql+psycopg2://myuser:mypassword@postgres:5432/mydatabase'
 
 
 BRAND_DATA_CSV = "csvFiles/brand_data.csv"
