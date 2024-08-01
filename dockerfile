@@ -13,7 +13,7 @@ RUN cd analytics_master
 RUN pip install --no-cache-dir -r /app/analytics_master/requirements.txt
 
 # Expose the port FastAPI will run on
-EXPOSE 500
+EXPOSE 5000
 
 # Command to run the FastAPI application using Uvicorn
 
