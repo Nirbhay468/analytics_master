@@ -5,7 +5,7 @@ FROM python:3.10-slim
 WORKDIR /app
 
 # Copy the requirements file to the working directory
-ADD analytics_master ./analytics_master/
+ADD ./* ./analytics_master/
 
 RUN cd analytics_master
 
@@ -17,4 +17,4 @@ EXPOSE 500
 
 # Command to run the FastAPI application using Uvicorn
 
-CMD ["uvicorn", "/app/analytics_master/main:app", "--host", "0.0.0.0", "--port", "5000"]
+CMD ["uvicorn", "./analytics_master/main:app", "--host", "0.0.0.0", "--port", "5000"]
